@@ -5,9 +5,9 @@ file = input("Introduce path to your file:")
 ext = pathlib.Path(file).suffix
 
 if ext == '.xlsx':
-    data = pd.read_excel(file(), engine='openpyxl')
+    data = pd.read_excel(file)
 elif ext == '.xls':
-    data = pd.read_excel(file.read())
+    data = pd.read_excel(file)
 elif ext == '.csv':
     data = pd.read_csv(file)
 elif ext == '.xml':
