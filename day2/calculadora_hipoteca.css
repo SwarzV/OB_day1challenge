@@ -1,0 +1,138 @@
+/*fonts:
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+a{
+    color:white !important;
+}
+
+html, body{
+    margin: 0;
+}
+
+body{
+    background-image: url(images/edificio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+.container-fluid{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    background-color: rgba(0,0,0,0.8);
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    border: 1px solid black;
+    color:white;
+    padding-right:40px;
+    padding-left:40px;
+}
+
+.calculadora__header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color:rgb(0, 225, 255);
+}
+
+.calculadora__field{
+    padding: 10px;
+}
+
+.calculadora__button{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.calculadora__field input{
+    width: 200px;
+    max-width: 100%;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.calculadora__button--button{
+    display:flex;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 0;
+    font-size: 18px;
+    font-family: 'Roboto';
+    color: white;
+    border-radius: 10px;
+}
+.calculadora__button--button:active {
+    box-shadow: 0 5px grey;
+    transform: translateY(4px);
+  }
+.calculadora__button--button:hover{
+    background-color:black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius:10px;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width:200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+input:disabled {
+    color: black;
+    background-color: white;
+ }
+
+ .resultado-final{
+     font-size:20px;
+ }
+
+ span{
+     color: yellow;
+ }
